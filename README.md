@@ -11,4 +11,4 @@ This repository contains visualisation of COVID19 trends and patterns. At the mo
 
 * Time trend plots of Wave 2 by Region
 
-[![Time trend plots of Wave 2 by Region](output/covid_reg2.png)]
+![Time trend plots of Wave 2 by Region](output/covid_reg2.png)
