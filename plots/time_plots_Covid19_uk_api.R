@@ -1,7 +1,7 @@
 ##########
 # title: Time Plots of COVID19 England
 # Author: Francisco Rowe
-# Date: 18 Dec 2020
+# Date: 30 Dec 2020
 # Data source: https://coronavirus.data.gov.uk/developers-guide
 ##########
 
@@ -41,7 +41,7 @@ structure <- list(
 
 # Main --------------------------------------------------------------------
 start_date <- "2020-03-01"
-end_date <- "2020-12-16"
+end_date <- "2020-12-29"
 
 start_date <- start_date %>% lubridate::ymd() %>% lubridate::floor_date(unit = "week")
 end_date <- end_date %>% lubridate::ymd() %>% lubridate::floor_date(unit = "week") - lubridate::days(1)
@@ -176,7 +176,7 @@ tsp1 <- tsp + geom_smooth(method = "loess", se = F, size=2, span = 0.3) +
 #  theme(axis.title=element_text(size=20, face="plain"))
 
 
-png("/Users/Franciscorowe 1/Dropbox/Francisco/Research/github_projects/maps/covid_map/output/covid_reg.png", units="in", width=16, height=12, res=300)
+png("/Users/franciscorowe/Dropbox/Francisco/Research/github_projects/covid_fr/covid19_viz/output/covid_reg.png", units="in", width=16, height=12, res=300)
 tsp1
 dev.off()
 
