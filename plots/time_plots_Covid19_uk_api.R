@@ -176,7 +176,7 @@ tsp1 <- tsp + geom_smooth(method = "loess", se = F, size=2, span = 0.3) +
 #  theme(axis.title=element_text(size=20, face="plain"))
 
 
-png("/Users/franciscorowe/Dropbox/Francisco/Research/github_projects/covid_fr/covid19_viz/output/covid_reg.png", units="in", width=16, height=12, res=300)
+png("./output/covid_reg.png", units="in", width=16, height=12, res=300)
 tsp1
 dev.off()
 
